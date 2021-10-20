@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Glassmorphism</title>
+</head>
+
+<body>
+    <section>
+        <div class="side" id="side1">
+            <video src="vid.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="vid.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="content">
+        <h2>Split Page Scroll</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius fuga molestiae soluta in odit tenetur
+            debitis et cum obcaecati quibusdam voluptatem, accusantium aspernatur! Minus repellat aperiam voluptates
+            voluptatibus officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quaerat? Voluptatem distinctio, optio fuga
+            officiis, temporibus libero quisquam tempora laudantium expedita aliquid totam quod in dolor asperiores
+            laboriosam vitae unde?Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo, quod numquam,
+            sunt quam a corrupti quae aspernatur incidunt consectetur, animi in deserunt fugit accusantium reprehenderit
+            libero ullam possimus quisquam!</p>
+    </div>
+
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', function () {
+            side1.style.left = -window.pageYOffset + 'px';
+            side2.style.left = window.pageYOffset + 'px';
+        })
+    </script>
+
+</body>
+
+</html>
